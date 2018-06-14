@@ -1,0 +1,25 @@
+//mobile first
+@mixin size($size)
+    @if $size == small
+        @media screen and (max-width: 30em)
+            @content
+
+
+    @else if $size == medium
+        @media screen and (min-width: 30.1em) and (max-width: 63.99em)
+            @content
+
+
+    @else if $size == large
+        @media screen and (min-width: 30em)
+            @content
+
+$parent_menu_items: 5
+
+@mixin breakpoint($point)
+    @if $point == small-index
+        @media (min-width: 48em)
+            @content
+    @else if $point == smaller-index
+        @media (max-width: 31em)
+            @content

@@ -1,38 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Protosite: Annex Theatre</title>
-        <link rel="stylesheet" href="css/staging.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/proto.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/nav.js"></script>
     </head>
     <body>
-        <div class="header">
-            <a href="staging.html">
-                <div class="header-left">
-                    <img src="images/annex-black.png" alt="Annex Theatre logo" />
-                </div>
-            </a>
-            <a href="staging.html">
-                <div class="header-right">
-                    <h1>
-                        WEB 220: Final Project
-                    </h1>
-                </div>
-            </a>
-        </div>
-        <article>
-            <h2>
-                Protosite: Annex Theatre
-            </h2>
-            <h3>
-                Content for assignment to go here.
-            </h3>
-            <p>Grow core competencies and above all, make users into advocates. Leading key demographics in order to take this offline. Demonstrate innovation with a goal to innovate. Informing sprints and then innovate. Utilising first party data while remembering to infiltrate new markets. Utilising outside the box thinking and possibly infiltrate new markets.</p>
-            <p>Generate first party data with a goal to come up with a bespoke solution. Generate customer experience with a goal to funnel users. Drive user engagement to, consequently, be transparent. Grow benchmarking to, consequently, be transparent. Informing responsive websites while remembering to use best practice.</p>
-            <p>Synchronising brand pillars while remembering to come up with a bespoke solution. Amplify benchmarking with the possibility to further your reach. Funneling integrated tech stacks with a goal to funnel users. Leverage big data and then make users into advocates. Utilising core competencies with the aim to make users into advocates. Synchronising growth hacking and above all, re-target key demographics.</p>
-            <p>Repurpose first party data to, consequently, re-target key demographics. Leveraging below the line and finally think outside the box. Take growth channels and finally think outside the box. Grow stakeholder management and try to target the low hanging fruit. Generate custom solutions in order to maximise share of voice. Demonstrate agile so that as an end result, we further your reach.</p>
-        </article>
-        <div class="footer">
-            <p>Design by <a href="http://www.growlingwillow.com" target="_blank">Catherine Blake Smith</a>.</p>
-        </div>
+        <div id="top-border"><a href="#"><img src="images/annex-orange.png"><h1>ANNEX THEATRE</h1></a></div>
+        <header>
+            <nav class="navbar">
+                <ul class="closed">
+                    <li id="mobile-menu" class="mobile-only">
+                        <a href="#">
+                            <div id="hamburger"></div>
+                            Menu
+                        </a>
+                    </li>
+                    <li><a href="#" class="dropdown-link">TICKETS</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Subscribe to A-List</a></li>
+                            <li><a href="#">Mainstage</a></li>
+                            <li><a href="#">Mind the Set</a></li>
+                            <li><a href="#">Spin the Bottle</a></li>
+                            <li><a href="#">Weird &amp; Awesome</a></li>
+                            <li><a href="#">Rentals</a></li>
+                            <li><a href="#">Ticket Tiers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-link">VENUE</a>
+                        <ul class="dropdown">
+                            <li><a href="venue.html#box-office">Box Office</a></li>
+                            <li><a href="venue.html#find-us">Find Us</a></li>
+                            <li><a href="venue.html#access">Access</a></li>
+                            <li><a href="venue.html#our-bar">Our Bar</a></li>
+                            <li><a href="venue.html#capitol-hill">Capitol Hill</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-link">GET INVOLVED</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Front of House</a></li>
+                            <li><a href="#">Submit Your Show</a></li>
+                            <li><a href="#">Auditions</a></li>
+                            <li><a href="#">Design with Us</a></li>
+                            <li><a href="#">Company Portal</a></li>
+                            <li><a href="#">Rent from Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-link">SUPPORT</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Donate</a></li>
+                            <li><a href="#">Sponsors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-link">ABOUT</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">30 Years History</a></li>
+                            <li><a href="#">Staff</a></li>
+                            <li><a href="#">Board</a></li>
+                            <li><a href="#">Production History</a></li>
+                            <li><a href="#">Production Photos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+            <div id="banner">
+                <img src="images/emmett-sarah-hug.jpg" alt="Emmett Montgomery and Sarah Galvin, Photo by Sayed Alamy">
+                <h2>HOME OF BOLD NEW WORK</h2>
+                <blockquote>
+                    Seattle's longest-running volunteer fringe theatre company, dedicated to producing bold new work in an environment of improbability, resourcefulness &amp; risk.
+                </blockquote>
+                <button type="button" name="shows"><a href="venue.html">Annex the World</a></button>
+            </div>
+        <footer>
+            <ul>
+                <li>
+                    <ul id="address">
+                        <li>Physical Address:<br />1100 E. Pike St.<br />Seattle, WA 98122</li>
+                        <li>Mailing Address:<br />1122 E. Pike St.<br />Seattle, WA 98122-3934</li>
+                        <li><a href="mailto:info@annextheatre.org">info@annextheatre.org</a><br /><a href="tel:+12067280933">206 - 728 - 0933</a></li>
+                    </ul>
+                </li>
+                <li id="social">
+                    <ul>
+                        <li id="fontawesome"><i class="fab fa-twitter-square"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i></li>
+                        <li id="motto">Annex Theatre is a democratic collective dedicated to producing bold new work in an environment of improbability, resourcefulness, and risk. Discover new plays at the top of two flights of stairs at the corner of 11th & E. Pike St. in Capitol Hill, Seattle.</li>
+                    </ul>
+                </li>
+                <li id="links">
+                    <ul>
+                        <li class="footer-link-list"><a href="#">Press</a></li>
+                        <li class="footer-link-list"><a href="#">Donate</a></li>
+                        <li class="footer-link-list"><a href="#">Tickets</a></li>
+                        <li class="footer-link-list"><a href="#">Venue</a></li>
+                        <li class="footer-link-list"><a href="#">Blog</a></li>
+                        <li class="footer-link-list"><a href="#">Company</a></li>
+                        <li class="footer-link-list"><a href="#">About</a></li>
+                        <li id="subscribe"><a href="#">Subscribe to the Annex Newsletter</a> to stay up to date about upcoming performances, ticket options, and auditions.</li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="copyright">
+                <p>&copy; Copyright 2018</p>
+                <p><a href="http://www.growlingwillow" target="_blank">Catherine Blake Smith</a></p>
+            </div>
+        </footer>
     </body>
 </html>

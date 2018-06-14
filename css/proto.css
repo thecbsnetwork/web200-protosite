@@ -1,0 +1,408 @@
+nav {
+  float: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: #303030;
+  height: 45px;
+  width: 100%; }
+  nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    @media screen and (max-width: 30em) {
+      nav ul.closed div#hamburger {
+        float: left;
+        margin: 10px -22px 10px 0;
+        width: 22px;
+        height: 22px;
+        background-image: url("../images/hamburger.png");
+        background-size: cover; }
+      nav ul.closed li:nth-child(n+2) {
+        display: none; }
+      nav ul.closed ul.dropdown {
+        display: none; }
+      nav ul.open div#hamburger {
+        float: left;
+        margin: 10px -22px 10px 0;
+        width: 22px;
+        height: 22px;
+        background-image: url("../images/x-icon.png");
+        background-size: cover; }
+      nav ul.open li ul.dropdown {
+        width: 100%;
+        display: none; }
+        nav ul.open li ul.dropdown li {
+          display: block; }
+          nav ul.open li ul.dropdown li:last-child {
+            border-bottom: 5px #2180A5 solid; }
+          nav ul.open li ul.dropdown li a {
+            line-height: 45px;
+            border: none;
+            font-weight: 400;
+            font-size: 18px; } }
+  nav li {
+    width: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav li#mobile-menu {
+      text-transform: uppercase; }
+  nav a {
+    display: block;
+    background-color: #303030;
+    padding: 0 20px;
+    color: #F57229;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 5px #2180A5 solid;
+    width: 100%; }
+    nav a:hover {
+      background-color: #F57229;
+      color: #FFFFFF; }
+  @media screen and (min-width: 30em) {
+    nav {
+      width: 100%;
+      height: 45px;
+      display: flex; }
+      nav li {
+        float: left;
+        width: 20%;
+        padding: 0;
+        border-right: none; }
+        nav li ul.dropdown {
+          position: absolute;
+          display: none; }
+        nav li:hover ul.dropdown {
+          flex-direction: column;
+          display: flex; }
+          nav li:hover ul.dropdown li {
+            flex-direction: column; }
+            nav li:hover ul.dropdown li a {
+              display: block;
+              background: #303030;
+              text-align: left;
+              font-weight: 400;
+              font-size: 18px;
+              white-space: nowrap;
+              border-bottom: none; }
+        nav li#mobile-menu {
+          display: none; }
+        nav li:last-child {
+          border: none; }
+        nav li a {
+          display: block;
+          text-align: left;
+          width: 100%;
+          font-weight: 700; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #FAFAFA; }
+
+ul li {
+  list-style: none; }
+
+#top-border {
+  background-color: #303030;
+  position: sticky;
+  top: 0;
+  height: 100px; }
+  #top-border img {
+    max-width: 75px;
+    max-height: 75px;
+    margin: 10px 25px;
+    display: inline-block; }
+  #top-border h1 {
+    color: #F57229;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5em;
+    display: inline-block;
+    vertical-align: top; }
+  @media screen and (min-width: 30.1em) and (max-width: 63.99em) {
+    #top-border {
+      display: none; } }
+  @media screen and (max-width: 30em) {
+    #top-border {
+      height: 50px; }
+      #top-border img {
+        max-width: 40px;
+        max-height: 40px;
+        margin: 5px 20px; }
+      #top-border h1 {
+        font-size: 1.5em;
+        line-height: 2em; } }
+
+nav {
+  z-index: 1; }
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #303030; }
+
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul {
+  font-family: "Open Sans", sans-serif;
+  color: #303030; }
+
+a {
+  color: #F57229;
+  text-decoration: underline; }
+  a:hover {
+    color: #2180A5; }
+
+#banner {
+  margin: 0 auto; }
+  #banner img {
+    object-fit: cover;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    border-bottom: 15px solid #2180A5;
+    z-index: -9999; }
+  #banner h2 {
+    margin: 100px auto 50px auto;
+    font-family: "Montserrat", sans-serif;
+    color: #303030;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center; }
+  #banner blockquote {
+    margin: 20px auto;
+    text-align: left;
+    width: 50%;
+    font-weight: 300;
+    font-style: italic; }
+    @media screen and (max-width: 30em) {
+      #banner blockquote {
+        width: 90%; } }
+  #banner i.fas {
+    display: inline-block;
+    font-size: 50px;
+    color: #2180A5; }
+  #banner button {
+    background-color: #2180A5;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 50px 40%; }
+    @media screen and (max-width: 30em) {
+      #banner button {
+        margin: 50px 20%; } }
+    #banner button a {
+      color: #FFFFFF;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none; }
+    #banner button:hover {
+      background-color: #F57229;
+      cursor: pointer; }
+
+main {
+  max-width: 960px;
+  float: left;
+  width: 63%;
+  margin: auto;
+  padding: 50px 100px; }
+  @media screen and (max-width: 30em) {
+    main {
+      float: none;
+      width: auto;
+      padding: 15px; } }
+  main h1 {
+    font-size: 5em;
+    color: #2180A5; }
+    @media screen and (max-width: 30em) {
+      main h1 {
+        padding-top: 50px; } }
+  main ul.intro {
+    padding: 50px 0; }
+    main ul.intro li {
+      padding: 20px 0; }
+      @media screen and (max-width: 30em) {
+        main ul.intro li {
+          padding: none; } }
+      main ul.intro li a {
+        font-size: 30px;
+        padding: 20px 50px;
+        width: 100%;
+        color: #303030;
+        text-decoration: none;
+        text-transform: uppercase; }
+        main ul.intro li a:hover {
+          color: #F57229;
+          text-decoration: underline; }
+        @media screen and (max-width: 30em) {
+          main ul.intro li a {
+            padding: none; } }
+  main div.venue {
+    border-top: 1px #303030 solid;
+    border-bottom: 1px #303030 solid;
+    margin: 75px 0px;
+    padding: 5px 0px;
+    height: 350px; }
+    @media screen and (max-width: 30em) {
+      main div.venue {
+        border: 0px;
+        margin: 100px 0px;
+        padding: 100px 0px;
+        height: 500px; } }
+    main div.venue p.return {
+      float: right;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: right;
+      width: 30%; }
+      @media screen and (max-width: 30em) {
+        main div.venue p.return {
+          width: 50%; } }
+      main div.venue p.return a {
+        color: #F57229;
+        text-decoration: none; }
+        main div.venue p.return a:hover {
+          color: #303030;
+          text-decoration: underline; }
+    main div.venue h2 {
+      font-size: 2em; }
+      main div.venue h2::before {
+        display: block;
+        content: " ";
+        margin-top: -285px;
+        height: 315px;
+        visibility: hidden;
+        pointer-events: none; }
+        @media screen and (max-width: 30em) {
+          main div.venue h2::before {
+            height: 150px; } }
+    main div.venue p {
+      font-size: 16px;
+      line-height: 1.5em;
+      float: left;
+      padding: 20px 0; }
+      @media screen and (max-width: 30em) {
+        main div.venue p {
+          padding: none; } }
+
+aside {
+  float: right;
+  width: 34%;
+  height: 100vh;
+  margin-top: 55px; }
+  @media screen and (max-width: 30em) {
+    aside {
+      float: none;
+      width: auto; } }
+  aside img {
+    max-width: 100%;
+    padding: 30px 20px;
+    float: left; }
+  aside h3 {
+    text-transform: uppercase;
+    color: #303030;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    float: left;
+    padding-left: 15px; }
+  aside p {
+    color: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    float: left;
+    padding: 15px 30px 15px 15px; }
+
+footer {
+  background-color: #303030;
+  overflow: hidden;
+  clear: both;
+  font-size: 0.75em;
+  margin: 50px auto 0px auto; }
+  footer i.fab {
+    display: inline;
+    font-size: 50px;
+    color: #F57229;
+    padding: 5px; }
+    footer i.fab:hover {
+      color: #FAFAFA;
+      cursor: pointer; }
+  footer p {
+    color: #FAFAFA; }
+  footer a {
+    color: #F57229;
+    text-decoration: underline; }
+    footer a:hover {
+      color: #FFFFFF; }
+  footer ul {
+    color: #FAFAFA;
+    max-width: 960px;
+    margin: 5% auto;
+    overflow: hidden; }
+    footer ul li {
+      width: 31.91%;
+      float: left;
+      padding: 1.5%;
+      position: relative;
+      line-height: 1.8em; }
+      footer ul li:nth-child(1), footer ul li :nth-child(2) {
+        margin-right: 2.12%; }
+      footer ul li#social {
+        padding-top: 10px; }
+      footer ul li#links {
+        padding: 75px 0px 100px 100px; }
+        @media screen and (max-width: 30em) {
+          footer ul li#links {
+            padding: 0px 0px 0px 10px; } }
+      @media screen and (max-width: 30em) {
+        footer ul li {
+          float: none;
+          width: auto; } }
+      footer ul li ul#address {
+        padding-top: 75px; }
+        @media screen and (max-width: 30em) {
+          footer ul li ul#address {
+            padding-top: 0px; } }
+      footer ul li ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 1.8em; }
+        footer ul li ul li:nth-child(1), footer ul li ul li :nth-child(2) {
+          margin-right: 2.12%; }
+        footer ul li ul li#fontawesome {
+          padding-top: 0;
+          text-align: center; }
+          @media screen and (max-width: 30em) {
+            footer ul li ul li#fontawesome {
+              text-align: left; } }
+        footer ul li ul li#motto {
+          padding: 75px 15px; }
+          @media screen and (max-width: 30em) {
+            footer ul li ul li#motto {
+              padding: 55px 10px; } }
+        footer ul li ul li.footer-link-list {
+          padding: 2px; }
+        footer ul li ul li#subscribe {
+          padding-top: 25px; }
+  footer div#copyright {
+    margin: 50px auto;
+    text-align: center; }
+    footer div#copyright p {
+      line-height: 2.8em; }
+
+/*# sourceMappingURL=proto.css.map */

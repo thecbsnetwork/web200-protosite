@@ -1,0 +1,296 @@
+@import "colors"
+@import "mixins"
+@import "nav"
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    background-color: $protolgray
+
+ul
+    li
+        list-style: none
+
+#top-border
+    background-color: $protodgray
+    position: sticky
+    top: 0
+    height: 100px
+    img
+        max-width: 75px
+        max-height: 75px
+        margin: 10px 25px
+        display: inline-block
+    h1
+        color: $protored-orange
+        font-family: $protoheadfont
+        font-size: 5em
+        display: inline-block
+        vertical-align: top
+    @include size(medium)
+        display: none
+    @include size(small)
+        height: 50px
+        img
+            max-width: 40px
+            max-height: 40px
+            margin: 5px 20px
+        h1
+            font-size: 1.5em
+            line-height: 2em
+
+nav
+    z-index: 1
+
+h1,
+h2,
+h3
+    font-family: $protoheadfont
+    color: $protodgray
+
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul
+    font-family: $protobodyfont
+    color: $protodgray
+a
+    color: $protored-orange
+    text-decoration: underline
+    &:hover
+        color: $protoblue
+
+#banner
+    margin: 0 auto
+    img
+        object-fit: cover
+        display: block
+        width: 100vw
+        height: 100vh
+        position: relative
+        border-bottom: 15px solid $protoblue
+        z-index: -9999
+    h2
+        margin: 100px auto 50px auto
+        font-family: $protoheadfont
+        color: $protodgray
+        font-size: 3em
+        font-weight: 700
+        text-align: center
+    blockquote
+        margin: 20px auto
+        text-align: left
+        width: 50%
+        font-weight: 300
+        font-style: italic
+        @include size(small)
+            width: 90%
+    //fontawesome quote style
+    i.fas
+        display: inline-block
+        font-size: 50px
+        color: $protoblue
+    button
+        background-color: $protoblue
+        padding: 20px
+        border-radius: 15px
+        margin: 50px 40%
+        @include size(small)
+            margin: 50px 20%
+        a
+            color: $white
+            font-family: $protoheadfont
+            text-transform: uppercase
+            font-size: 20px
+            font-weight: 700
+            text-decoration: none
+        &:hover
+            background-color: $protored-orange
+            cursor: pointer
+
+main
+    max-width: 960px
+    float: left
+    width: 63%
+    margin: auto
+    padding: 50px 100px
+    @include size(small)
+        float: none
+        width: auto
+        padding: 15px
+    h1
+        font-size: 5em
+        color: $protoblue
+        @include size(small)
+            padding-top: 50px
+    ul.intro
+        padding: 50px 0
+        li
+            padding: 20px 0
+            @include size(small)
+                padding: none
+            a
+                font-size: 30px
+                padding: 20px 50px
+                width: 100%
+                color: $protodgray
+                text-decoration: none
+                text-transform: uppercase
+                &:hover
+                    color: $protored-orange
+                    text-decoration: underline
+                @include size(small)
+                    padding: none
+    div.venue
+        border-top: 1px $protodgray solid
+        border-bottom: 1px $protodgray solid
+        margin: 75px 0px
+        padding: 5px 0px
+        height: 350px
+        @include size(small)
+            border: 0px
+            margin: 100px 0px
+            padding: 100px 0px
+            height: 500px
+        p.return
+            float: right
+            font-family: $protoheadfont
+            font-weight: 400
+            text-transform: uppercase
+            text-align: right
+            width: 30%
+            @include size(small)
+                width: 50%
+            a
+                color: $protored-orange
+                text-decoration: none
+                &:hover
+                    color: $protodgray
+                    text-decoration: underline
+        h2
+            font-size: 2em
+            &::before
+                display: block
+                content: " "
+                margin-top: -285px
+                height: 315px
+                visibility: hidden
+                pointer-events: none
+                @include size(small)
+                    height: 150px
+        p
+            font-size: 16px
+            line-height: 1.5em
+            float: left
+            padding: 20px 0
+            @include size(small)
+                padding: none
+
+aside
+    float: right
+    width: 34%
+    height: 100vh
+    margin-top: 55px
+    @include size(small)
+        float: none
+        width: auto
+    img
+        max-width: 100%
+        padding: 30px 20px
+        float: left
+    h3
+        text-transform: uppercase
+        color: $protodgray
+        font-family: $protoheadfont
+        font-size: 1em
+        line-height: 2em
+        float: left
+        padding-left: 15px
+    p
+        color: $protobodyfont
+        font-family: $protobodyfont
+        font-size: 12px
+        line-height: 1.5em
+        float: left
+        padding: 15px 30px 15px 15px
+
+footer
+    background-color: $protodgray
+    overflow: hidden
+    clear: both
+    font-size: .75em
+    margin: 50px auto 0px auto
+    //fontawesome social styling
+    i.fab
+        display: inline
+        font-size: 50px
+        color: $protored-orange
+        padding: 5px
+        &:hover
+            color: $protolgray
+            cursor: pointer
+    p
+        color: $protolgray
+    a
+        color: $protored-orange
+        text-decoration: underline
+        &:hover
+            color: $white
+    ul
+        color: $protolgray
+        max-width: 960px
+        margin: 5% auto
+        overflow: hidden
+        li
+            width: 31.91%
+            float: left
+            padding: 1.5%
+            position: relative
+            line-height: 1.8em
+            &:nth-child(1), :nth-child(2)
+                margin-right: 2.12%
+            &#social
+                padding-top: 10px
+            &#links
+                padding: 75px 0px 100px 100px
+                @include size(small)
+                    padding: 0px 0px 0px 10px
+            @include size(small)
+                float: none
+                width: auto
+            ul
+                &#address
+                    padding-top: 75px
+                    @include size(small)
+                        padding-top: 0px
+                li
+                    display: block
+                    float: none
+                    width: 100%
+                    margin: 0 auto
+                    line-height: 1.8em
+                    &:nth-child(1), :nth-child(2)
+                        margin-right: 2.12%
+                    &#fontawesome
+                        padding-top: 0
+                        text-align: center
+                        @include size(small)
+                            text-align: left
+                    &#motto
+                        padding: 75px 15px
+                        @include size(small)
+                            padding: 55px 10px
+                    &.footer-link-list
+                        padding: 2px
+                    &#subscribe
+                        padding-top: 25px
+    div#copyright
+        margin: 50px auto
+        text-align: center
+        p
+            line-height: 2.8em

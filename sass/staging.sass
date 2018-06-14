@@ -1,0 +1,76 @@
+@import "colors"
+@import "mixins"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: $stagebg
+    font-family: $stagefont
+    color: $black
+
+nav
+    height: 100%
+    width: 300px
+    position: fixed
+    z-index: 1
+    top: 0
+    left: 0
+    background-color: $stagebg
+    overflow: hidden
+    padding-top: 10px
+    color: $black
+    border-right: 1px dotted $black
+        padding-left: 5px
+    img
+        padding: 25px 0px
+        margin: auto
+    a
+        padding: 20px 20px 20px 50px
+        display: block
+        color: $black
+        text-decoration: underline
+        font-size: 1em
+        &:hover
+            color: $stagehighlight
+    #credit
+        font-size: small
+        padding: 10px 0 20px 50px
+        a
+            display: inline
+            padding: 0
+            font-size: small
+    @include breakpoint(small-index)
+        img
+            padding: 5px 5px
+    @include breakpoint(smaller-index)
+        display: none
+
+main
+    margin-left: 310px
+    padding: 30px 10px
+    hr
+        margin: 25px 0
+    h2
+        display: inline-block
+    h3
+        padding: 10px 5px
+    p
+        font-size: 1em
+        padding: 10px 0 0 30px
+        line-height: 1.3em
+    ul
+        padding: 10px 0 0 30px
+        li
+            padding: 8px
+    a
+        color: $black
+        &:hover
+            color: $stagehighlight
+    img
+        max-width: 100%
+        height: auto
+    @include breakpoint(smaller-index)
+        margin-left: 0
